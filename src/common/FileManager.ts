@@ -1,5 +1,5 @@
 import fileUpload from "express-fileupload";
-import { parse } from "path";
+import { join, parse } from "path";
 import {
   createReadStream,
   createWriteStream,
