@@ -16,7 +16,7 @@ class FileManager {
   private buckets: Array<string> = ["questionsImages", "portraitImages"];
 
   constructor() {
-    this.directory = join("/", "temp", "tempFiles");
+    this.directory = join("/", "tmp", "temp");
     if (!existsSync(this.directory)) {
       mkdirSync(this.directory);
     }
