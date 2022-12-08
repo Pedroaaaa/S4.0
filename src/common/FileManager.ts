@@ -1,5 +1,5 @@
 import fileUpload from "express-fileupload";
-import { join, parse } from "path";
+import { parse } from "path";
 import {
   createReadStream,
   createWriteStream,
@@ -16,7 +16,7 @@ class FileManager {
   private buckets: Array<string> = ["questionsImages", "portraitImages"];
 
   constructor() {
-    this.directory = join("/temp/tempFiles");
+    this.directory = "/temp/tempFiles";
     if (!existsSync(this.directory)) {
       mkdirSync(this.directory);
     }
